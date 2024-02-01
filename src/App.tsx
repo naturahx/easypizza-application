@@ -27,7 +27,6 @@ const App: FC = () => {
       <div className="wrap">
         <span className="heading">Пиццерия</span>
         <AddPizzaForm addPizza={addPizza} />
-
         <DisplayPizzas
           pizzasList={pizzasList}
           deletePizza={deletePizza}

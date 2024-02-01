@@ -19,8 +19,8 @@ const AddPizzaForm: FC<AddPizzaFormProps> = ({ addPizza }) => {
     img: string;
   }>(initState);
 
-  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
-    const { name, value } = e.target;
+  const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = event.target;
 
     setNewPizza({
       ...newPizza,
@@ -28,8 +28,8 @@ const AddPizzaForm: FC<AddPizzaFormProps> = ({ addPizza }) => {
     });
   };
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
+  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
 
     const { title, price, img } = newPizza;
 

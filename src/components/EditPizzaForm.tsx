@@ -15,8 +15,8 @@ const EditPizzaForm: FC<EditPizzaFormProps> = ({
 }) => {
   const [editPizza, setEditPizza] = useState<Pizza>(data);
 
-  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
-    const { name, value } = e.target;
+  const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = event.target;
 
     setEditPizza({
       ...editPizza,
@@ -24,8 +24,8 @@ const EditPizzaForm: FC<EditPizzaFormProps> = ({
     });
   };
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
+  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
 
     const { title, price, img } = editPizza;
 

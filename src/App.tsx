@@ -22,8 +22,6 @@ const App: FC = () => {
     setPizzasList(newPizzasList);
   };
 
-  console.log("pizzasList >>>>> ", pizzasList);
-
   return (
     <div className="App">
       <div className="wrap">

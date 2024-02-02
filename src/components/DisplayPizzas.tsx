@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import SinglePizza from "../components/SinglePizza";
-import Pizza from "../models/Pizza";
+import Pizza from "../Pizza";
 
 interface DisplayPizzasProps {
   pizzasList: Pizza[];

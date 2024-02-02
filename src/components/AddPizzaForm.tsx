@@ -1,6 +1,6 @@
 import React, { FC, ChangeEvent, FormEvent, useState } from "react";
-import Pizza from "../models/Pizza";
-import "./style.css";
+import Pizza from "../Pizza";
+import style from './AddPizzaForm.module.css'
 
 interface AddPizzaFormProps {
   addPizza: (newPizza: Pizza) => void;
@@ -43,8 +43,6 @@ const AddPizzaForm: FC<AddPizzaFormProps> = ({ addPizza }) => {
       setNewPizza(initState);
     }
   };
-
-  console.log("new pizza>>>>", newPizza);
 
   return (
     <form onSubmit={handleSubmit}>

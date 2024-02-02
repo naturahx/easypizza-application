@@ -1,7 +1,7 @@
 import React, { FC, useState } from "react";
 import { AiFillEdit, AiFillDelete } from "react-icons/ai";
 import EditPizzaForm from "./EditPizzaForm";
-import Pizza from "../models/Pizza";
+import Pizza from "../Pizza";
 
 interface SinglePizzaProps {
   pizza: Pizza;

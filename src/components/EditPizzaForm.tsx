@@ -1,5 +1,5 @@
 import React, { FC, ChangeEvent, FormEvent, useState } from "react";
-import Pizza from "../models/Pizza";
+import Pizza from "../Pizza";
 import "./style.css";
 
 interface EditPizzaFormProps {
